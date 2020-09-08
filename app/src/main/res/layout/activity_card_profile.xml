@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.MaterialComponents.Light"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".CardProfileActivity">
+
+        <ImageView
+            android:id="@+id/card_profile_pic"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="50dp"
+            android:layout_gravity="center"
+            tools:ignore="MissingConstraints"></ImageView>
+        <TextView
+            android:id="@+id/card_profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            app:hintTextColor="#35AFE6"
+            app:boxStrokeColor="#FFB33E"
+            android:padding="20dp"
+            style="@style/Widget.MaterialComponents.TextView"></TextView>
+        <TextView
+            android:id="@+id/card_profile_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            app:hintTextColor="#35AFE6"
+            app:boxStrokeColor="#FFB33E"
+            android:padding="20dp"
+            style="@style/Widget.MaterialComponents.TextView"></TextView>
+        <TextView
+            android:id="@+id/card_profile_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            app:hintTextColor="#35AFE6"
+            app:boxStrokeColor="#FFB33E"
+            android:padding="20dp"
+            style="@style/Widget.MaterialComponents.TextView"></TextView>
+        <TextView
+            android:id="@+id/card_profile_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Working city"
+            app:hintTextColor="#35AFE6"
+            app:boxStrokeColor="#FFB33E"
+            android:padding="20dp"
+            style="@style/Widget.MaterialComponents.TextView"></TextView>
+        <TextView
+            android:id="@+id/card_profile_profession"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Profession"
+            app:hintTextColor="#35AFE6"
+            app:boxStrokeColor="#FFB33E"
+            android:padding="20dp"
+            style="@style/Widget.MaterialComponents.TextView"></TextView>
+        <TextView
+            android:id="@+id/card_profile_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            app:hintTextColor="#35AFE6"
+            app:boxStrokeColor="#FFB33E"
+            android:padding="20dp"
+            style="@style/Widget.MaterialComponents.TextView"></TextView>
+        <TextView
+            android:id="@+id/card_profile_experience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Experience"
+            app:hintTextColor="#35AFE6"
+            app:boxStrokeColor="#FFB33E"
+            android:padding="20dp"
+            style="@style/Widget.MaterialComponents.TextView">
+
+        </TextView>
+        <Button
+            android:onClick="sendEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Make a Email regarding your requirements"
+            android:padding="20dp"
+            />
+        <Button
+            android:onClick="makeCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Make a Direct Phone call, share your needs"
+            android:padding="20dp"
+            />
+
+    </LinearLayout>
+</ScrollView>

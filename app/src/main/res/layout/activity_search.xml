@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".SearchActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:background="@mipmap/ic_launcher_round">
+    </ImageView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="City in which you search for"
+        app:boxStrokeColor="#FFB33E"
+        app:hintTextColor="#35AFE6"
+        android:layout_margin="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searching_city"
+
+            android:inputType="none"></AutoCompleteTextView>
+    </com.google.android.material.textfield.TextInputLayout>
+
+ <com.google.android.material.textfield.TextInputLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     app:boxStrokeColor="#FFB33E"
+     app:hintTextColor="#35AFE6"
+     android:hint="Interested Professional"
+     android:layout_margin="10dp"
+     style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+     <AutoCompleteTextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/searching_profession"
+         android:inputType="none"></AutoCompleteTextView>
+ </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:theme="@style/Widget.MaterialComponents.Button.TextButton"
+        android:shadowColor="#219CFB"
+        android:text="Sign in"
+        android:paddingTop="20dp"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:onClick="getResults"></Button>
+</LinearLayout>
