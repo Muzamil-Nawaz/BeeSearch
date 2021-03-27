@@ -1,6 +1,10 @@
 # BeeSearch
 
 
+
+#Animated Demo
+![BeeSearch App working demo](https://github.com/Muzamil-Nawaz/BeeSearch/blob/master/BeeSearchDemo.gif)
+
 Android application for different professionals who wants to provide their services
 within their city and want to maximize their professional opportunities.
 
